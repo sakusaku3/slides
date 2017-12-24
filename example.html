@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="著者">
+  <title>タイトル</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">タイトル</h1>
+  <p class="author">著者</p>
+  <p class="date">日付</p>
+</section>
+
+<section id="題名" class="slide level1">
+<h1>題名</h1>
+<p>&quot;#&quot;で題名になる</p>
+</section>
+<section id="改行の仕方" class="slide level1">
+<h1>改行の仕方</h1>
+<p>末尾に改行を</p>
+<p>2つ入れると改行される</p>
+<p>明示的に改行するなら<br> &lt;br&gt;を末尾に記入する。</p>
+</section>
+<section id="スライド区切り" class="slide level1">
+<h1>スライド区切り</h1>
+<p>&quot;#&quot;でスライドを区切れる</p>
+<p>題の階層を指定すれば&quot;##&quot;でもスライドを区切れる</p>
+</section>
+<section class="slide level1">
+
+<p>ハイフンを3つでスライドを区切れる</p>
+<p>ハイフン行の下に空行を一行入れる</p>
+</section>
+<section id="リスト" class="slide level1">
+<h1>リスト</h1>
+<ul>
+<li>&quot;-&quot;でリストになる</li>
+<li>あああ</li>
+<li>ううう</li>
+</ul>
+</section>
+<section id="番号付きリスト" class="slide level1">
+<h1>番号付きリスト</h1>
+<ol type="1">
+<li>&quot;1.&quot;で番号付きリストになる</li>
+<li>あああ</li>
+<li>ううう</li>
+</ol>
+</section>
+<section id="画像" class="slide level1">
+<h1>画像</h1>
+<p>相対パスで指定する</p>
+<figure>
+<img src="./image/nico.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+</section>
+<section id="コード" class="slide level1">
+<h1>コード</h1>
+<p>コードを明示する場合&quot;```[hoge]&quot;, &quot;```&quot;で囲む</p>
+<p>[hoge]に任意の言語を指定すると</p>
+<p>シタックスハイライト可能</p>
+<div class="sourceCode"><pre class="sourceCode cs"><code class="sourceCode cs"><span class="kw">public</span> <span class="kw">class</span> Hoge
+{
+    <span class="kw">public</span> <span class="kw">static</span> <span class="fu">main</span>(<span class="dt">string</span>[] args)
+    {
+        Console.<span class="fu">WriteLine</span>(<span class="st">&quot;Hellow World&quot;</span>);
+    }
+}</code></pre></div>
+</section>
+<section class="slide level1">
+
+<h3 id="シンプルテーブル1">シンプルテーブル1</h3>
+<table>
+<caption>テーブル名</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">right</th>
+<th style="text-align: left;">left</th>
+<th style="text-align: center;">center</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: center;">1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: center;">2</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: center;">3</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level1">
+
+<h3 id="シンプルテーブル2">シンプルテーブル2</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">123</td>
+<td style="text-align: left;">123</td>
+<td style="text-align: center;">123</td>
+<td style="text-align: right;">123</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level1">
+
+<h3 id="パイプテーブル">パイプテーブル</h3>
+<table>
+<caption>パイプテーブルのデモ</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">右寄せ</th>
+<th style="text-align: left;">左寄せ</th>
+<th>デフォルト</th>
+<th style="text-align: center;">中央寄せ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">12</td>
+<td>12</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">123</td>
+<td style="text-align: left;">123</td>
+<td>123</td>
+<td style="text-align: center;">123</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
+<td>1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="変換" class="slide level1">
+<h1>変換</h1>
+<p>このmdファイルを変換するにはbash上で下記コードを実行する</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">pandoc</span> -t revealjs -s -o example.html example.md</code></pre></div>
+</section>
+<section id="参照" class="slide level1">
+<h1>参照</h1>
+<ul>
+<li><a href="http://sky-y.github.io/site-pandoc-jp/users-guide/">Pandocユーザーズガイド</a></li>
+<li><a href="https://qiita.com/sukakako/items/a78478f94e934c47b993">Pandocでrevel.jsを使う</a></li>
+<li><a href="https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides">github reveal.js</a></li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
